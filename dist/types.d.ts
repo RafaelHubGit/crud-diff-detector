@@ -1,6 +1,6 @@
 export type CrudOperation = 'insert' | 'update' | 'delete' | 'none';
 export interface BaseWithOperation {
-    Operacion?: CrudOperation;
+    _op?: CrudOperation;
 }
 export interface MatchOnMap {
     [arrayName: string]: string[];
